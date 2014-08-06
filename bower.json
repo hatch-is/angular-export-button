@@ -1,0 +1,10 @@
+{
+    "name": "angular-export-button",
+    "version": "0.0.1",
+    "main": "src/directive/export-dropdown.js",
+    "dependencies": {
+        "ng-csv": "0.2.3",
+        "pdfmake": "0.1.8",
+        "angular-strap": "~2.0.3"
+    }
+}
