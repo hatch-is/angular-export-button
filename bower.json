@@ -1,7 +1,29 @@
 {
     "name": "angular-export-button",
+    "description": "Angular Export Button - AngularJS directive for creating reports in csv and pdf",
     "version": "0.0.4",
-    "main": "dist/directive/export-dropdown.js",
+    "keywords": [
+        "angular",
+        "csv",
+        "pdf",
+        "makepdf",
+        "ngcsv"
+    ],
+    "homepage": "https://github.com/hatch-is/angular-export-button",
+    "bugs": "https://github.com/hatch-is/angular-export-button/issues",
+    "author": {
+        "name": "Dmytro Arushanov",
+        "email": "daruwanov@gmail.com",
+        "url": "https://github.com/daruwanov"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/hatch-is/angular-export-button"
+    },
+    "main": [
+        "dist/export-dropdown.js",
+        "dist/export-dropdown.tpl.js"
+    ],
     "dependencies": {
         "ng-csv": "0.2.3",
         "pdfmake": "0.1.8",
