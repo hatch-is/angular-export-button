@@ -13,7 +13,7 @@
         <input type="text" class="form-control" placeholder="filename" data-ng-model="fileName">
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-success" ng-csv="getSCVArray()" csv-header="headers" filename="{{ fileName }}.csv" >Download CSV</button>
+        <button type="button" class="btn btn-success" ng-csv="getSCVArray()" csv-header="CSVheaders" filename="{{ fileName }}.csv" >Download CSV</button>
         <button type="button" class="btn btn-success" data-ng-click="downloadPDF(fileName)" >Download PDF</button>
         <button type="button" class="btn btn-default" ng-click="$hide()">Close</button>
       </div>
