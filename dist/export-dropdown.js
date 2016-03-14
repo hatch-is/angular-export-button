@@ -23,7 +23,7 @@
                 scope.getSCVArray = function () {
                     var data = [];
                     angular.forEach(scope.resources, function (resource) {
-                        var tmp = {}
+                        var tmp = {};
                         angular.forEach(scope.fields, function (field) {
                             tmp[field] = resource[field];
                         });
@@ -38,7 +38,7 @@
                     var data = [];
                     data.push(scope.headers);
                     angular.forEach(scope.resources, function (resource) {
-                        var tmp = []
+                        var tmp = [];
                         angular.forEach(scope.fields, function (field) {
                             tmp.push(resource[field]);
                         });
@@ -46,7 +46,7 @@
                     });
 
 
-                    var pdf = {
+                    return {
                         content: [
                             {
                                 table: {
@@ -56,10 +56,9 @@
                                 }
                             }
                         ],
-                        pageOrientation: scope.pageOrientation
+                        pageOrientation: scope.pageOrientation,
+                        pageMargins: scope.pageMargins
                     };
-
-                    return pdf;
                 };
 
                 //function that download pdf file
@@ -88,7 +87,8 @@
                     resources: '=resources',
                     fields: '=fields',
                     headers: '=headers',
-                    pageOrientation: '=pageOrientation'
+                    pageOrientation: '=pageOrientation',
+                    pageMargins: '=pageMargins'
                 },
                 link: linker,
                 transclude: true,
