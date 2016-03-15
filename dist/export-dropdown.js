@@ -53,7 +53,8 @@
                                     headerRows: 1,
                                     width: ['auto', 'auto', 'auto'],
                                     body: data
-                                }
+                                },
+                                fontSize: scope.fontSize
                             }
                         ],
                         pageOrientation: scope.pageOrientation,
@@ -88,7 +89,8 @@
                     fields: '=fields',
                     headers: '=headers',
                     pageOrientation: '=pageOrientation',
-                    pageMargins: '=pageMargins'
+                    pageMargins: '=pageMargins',
+                    fontSize: "=fontSize"
                 },
                 link: linker,
                 transclude: true,
