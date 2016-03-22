@@ -1,21 +1,23 @@
 (function (window, document) {
     angular.module('ngExportButton', ['ngExportButton.directive']);
 
-    angular.module('ngExportButton.directive', ['mgcrea.ngStrap', 'ngCsv', 'ngSanitize']);
+    angular.module('ngExportButton.directive', ['mgcrea.ngStrap.dropdown', 'ui.bootstrap.modal', 'ngCsv', 'ngSanitize']);
 
     angular.module('ngExportButton.directive').directive('exportButton', ['$modal',
         function ($modal) {
 
             var linker = function (scope, element, attrs) {
 
-                //Init modal window instance
-                var fileNameModal = $modal({scope: scope, template: 'templates/fileName-modal.tpl.html', show: false});
-
                 //function that open modal window
                 scope.showModal = function () {
-                    fileNameModal.$promise.then(fileNameModal.show);
+                    var modalInstance;
+                    modalInstance = $modal.open(
+                        {
+                            scope: scope,
+                            templateUrl: 'templates/fileName-modal.tpl.html'
+                        }
+                    );
                 };
-
 
                 scope.CSVheaders = angular.copy(scope.headers);
 
