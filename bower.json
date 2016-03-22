@@ -1,7 +1,7 @@
 {
   "name": "angular-export-button",
   "description": "Angular Export Button - AngularJS directive for creating reports in csv and pdf",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "keywords": [
     "angular",
     "csv",
