@@ -4,10 +4,10 @@
         <small>(or left blank to use default file name)</small>
         <br><br><input type="text" class="form-control" placeholder="filename" data-ng-model="fileName"></div>
     <div class="modal-footer">
-        <button type="button" class="btn btn-success" ng-csv="getSCVArray()" csv-header="CSVheaders"
+        <button type="button" class="btn btn-sm btn-success" ng-csv="getSCVArray()" csv-header="CSVheaders"
                 filename="{{ fileName }}.csv">Download CSV
         </button>
-        <button type="button" class="btn btn-success" data-ng-click="downloadPDF(fileName)">Download PDF</button>
-        <button type="button" class="btn btn-default" ng-click="$close()">Close</button>
+        <button type="button" class="btn btn-sm btn-success" data-ng-click="downloadPDF(fileName)">Download PDF</button>
+        <button type="button" class="btn btn-sm btn-gray" ng-click="$close()">Close</button>
     </div>
 </form>
